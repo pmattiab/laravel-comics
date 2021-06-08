@@ -145,12 +145,12 @@ main #comics .title {
 main #comics .comics_list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 main #comics .comics_list .single_comic {
-  width: calc(100% / 6);
+  width: calc((100% / 6) - 25px);
   margin-bottom: 50px;
-  padding: 0 15px;
 }
 
 main #comics .comics_list .single_comic span {
@@ -178,5 +178,30 @@ main #comics .load_more button {
   background-color: #0182f9;
   border: 0;
   cursor: pointer;
+}
+
+main #links {
+  background-color: #0182f9;
+  padding: 50px 0;
+}
+
+main #links .links_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+main #links .links_container img {
+  height: 50px;
+  max-width: 50px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+main #links .links_container span {
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #4e4e4e;
 }
 

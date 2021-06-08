@@ -18,12 +18,12 @@ main {
         .comics_list {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-around;
 
             .single_comic {
 
-                width: calc(100% / 6);
+                width: calc((100% / 6) - 25px);
                 margin-bottom: 50px;
-                padding: 0 15px;
 
                 span {
                     text-transform: uppercase;
@@ -53,6 +53,28 @@ main {
                 background-color: $brand_primary_color;
                 border: 0;
                 cursor: pointer;
+            }
+        }
+    }
+
+    #links {
+
+        background-color: $brand_primary_color;
+        padding: 50px 0;
+
+        .links_container {
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                height: 50px;
+                max-width: 50px;
+                vertical-align: middle;
+                margin: 0 10px;
+            }
+
+            span {
+                text-transform: uppercase;
             }
         }
     }

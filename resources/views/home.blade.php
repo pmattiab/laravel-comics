@@ -35,9 +35,7 @@
             </div>
 
             <div class="load_more">
-                <button>
-                    LOAD MORE
-                </button>
+                <button>LOAD MORE</button>
             </div>
 
         </div>
@@ -45,6 +43,39 @@
     </section>
 
     <section id="links">
+
+        <div class="container">
+
+            <div class="links_container">
+                
+                <div>
+                    <img src="{{asset("img/buy-comics-digital-comics.png")}}" alt="">
+                    <span>Digital Comics</span>
+                </div>
+
+                <div>
+                    <img src="{{asset("img/buy-comics-merchandise.png")}}" alt="">
+                    <span>DC Merchandise</span>
+                </div>
+
+                <div>
+                    <img src="{{asset("img/buy-comics-subscriptions.png")}}" alt="">
+                    <span>Subscription</span>
+                </div>
+
+                <div>
+                    <img src="{{asset("img/buy-comics-shop-locator.png")}}" alt="">
+                    <span>Comic Shop Location</span>
+                </div>
+
+                <div>
+                    <img src="{{asset("img/buy-dc-power-visa.svg")}}" alt="">
+                    <span>DC Power Visa</span>
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
