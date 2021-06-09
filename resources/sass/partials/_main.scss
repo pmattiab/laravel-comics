@@ -2,13 +2,15 @@ main {
 
     .title {
         display: inline-block;
-        text-transform: uppercase;
-        font-size: 20px;
         background-color: $brand_primary_color;
         padding: 10px 20px;
         position: relative;
         top: -50px;
         left: 0;
+
+        h1 {
+            font-size: 20px;
+        }
     }
 
     #comics {
@@ -21,6 +23,10 @@ main {
             justify-content: space-around;
 
             .single_comic {
+
+                a {
+                    color: white;
+                }
 
                 width: calc((100% / 6) - 25px);
                 margin-bottom: 50px;
@@ -84,4 +90,96 @@ main {
         background-color: $brand_secondary_color;
     }
 
+    #comic_info {
+
+        .banner {
+            height: 80px;
+            background-color: $brand_primary_color;
+        }
+
+        .comic_poster {
+            position: relative;
+            top: -230px;
+            left: 0;
+        }
+
+        .comic_details {
+
+            padding: 50px 0;
+
+            .small_container {
+                display: flex;
+
+                .col_sx {
+                    width: 70%;
+                    padding-right: 25px;
+                }
+
+                .col_dx {
+                    width: 30%;
+                    padding-left: 25px;
+                    text-align: right;
+                }
+            }
+
+            .comic_description {
+                color: gray;
+                margin: 10px 0;
+                line-height: 25px;
+            }
+            
+            .comic_title {
+                color: $brand_third_color;
+                margin: 20px 0;
+
+                h1 {
+                    font-size: 30px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .comic_shop {
+                font-weight: bold;
+                background-color: #55ba59;
+                border-bottom: 1px solid $brand_third_color;
+                display: flex;
+                justify-content: space-between;
+
+                .comic_price {
+                    padding: 13px 23px;
+                    flex-grow: 1;
+
+                    .us_price {
+                        color: #aef894;
+                    }
+                }
+
+                .disponibility {
+                    padding: 13px 23px;
+                    color: #aef894;
+                }
+
+                .check_availability {
+                    padding: 13px 23px;
+                    border-left: 1px solid $brand_third_color;
+
+                    i {
+                        vertical-align: top;
+                    }
+                }
+            }
+
+        }
+
+        .adv {
+            color: $brand_third_color;
+            font-weight: bold;
+        }
+
+        .adv_img {
+            img {
+                width: 100%;
+            }
+        }
+    }
 }

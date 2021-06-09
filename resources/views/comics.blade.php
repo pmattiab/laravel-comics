@@ -1,7 +1,7 @@
 @extends("layouts.app")
 
 @section("tag_title")
-    Homepage
+    Comics
 @endsection
 
 @section("main_content")

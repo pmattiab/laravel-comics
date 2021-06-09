@@ -1,7 +1,7 @@
 @extends("layouts.app")
 
 @section("tag_title")
-    Characters
+    Collectibles
 @endsection
 
 @section("main_content")

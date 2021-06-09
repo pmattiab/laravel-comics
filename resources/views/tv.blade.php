@@ -1,7 +1,7 @@
 @extends("layouts.app")
 
 @section("tag_title")
-    Characters
+    TV
 @endsection
 
 @section("main_content")

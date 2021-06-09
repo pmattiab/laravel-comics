@@ -9,12 +9,21 @@ body {
     color: white;
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
 input, select {
     outline: none;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.small_container {
+    max-width: 1024px;
     margin: 0 auto;
 }
 
