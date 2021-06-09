@@ -131,11 +131,7 @@ header .bottom_header {
   background-image: url("../img/jumbotron.jpg");
 }
 
-main #comics {
-  background-color: #222;
-  padding: 20px 0;
-}
-main #comics .title {
+main .title {
   display: inline-block;
   text-transform: uppercase;
   font-size: 20px;
@@ -144,6 +140,10 @@ main #comics .title {
   position: relative;
   top: -50px;
   left: 0;
+}
+main #comics {
+  background-color: #222;
+  padding: 20px 0;
 }
 main #comics .comics_list {
   display: flex;
@@ -193,6 +193,10 @@ main #links .links_container img {
 }
 main #links .links_container span {
   text-transform: uppercase;
+}
+main #characters {
+  padding: 20px 0;
+  background-color: #222;
 }
 
 footer .top_footer {

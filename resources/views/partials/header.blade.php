@@ -21,7 +21,7 @@
                 <div>
                     <nav>
                         <ul>
-                            <li><a href="#">Characters</a></li>
+                            <li><a href="{{route("characters")}}">Characters</a></li>
                             <li><a class="active" href="#">Comics</a></li>
                             <li><a href="#">Movies</a></li>
                             <li><a href="#">TV</a></li>
