@@ -4,13 +4,29 @@ header {
 
         a {
             text-transform: uppercase;
+
+            span.r {
+                font-size: 16px;
+                vertical-align: middle;
+            }
+
+            span.sm {
+                font-size: 6px;
+                vertical-align: super;
+                font-weight: bold;
+            }
+
+            i {
+                vertical-align: text-top;
+            }
         }
 
         .top_menu {
             background-color: $brand_primary_color;
-            padding: 5px 0;
             text-align: right;
-            font-size: 12px;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 3px 0;
 
             li {
                 display: inline-block;
@@ -51,7 +67,17 @@ header {
                             color: $brand_primary_color;
                             border-bottom: 5px solid $brand_primary_color;
                         }
+
+                        &:hover {
+                            color: $brand_primary_color;
+                            border-bottom: 5px solid $brand_primary_color;
+                        }
                     }
+                }
+
+                i {
+                    color: $brand_primary_color;
+                    vertical-align: text-top;
                 }
             }
 
@@ -61,7 +87,7 @@ header {
 
                 input {
                     width: 150px;
-                    padding: 5px 10px;
+                    padding: 0 25px 5px 0;
                     color: $brand_third_color;
                     text-align: right;
                     border-top: 0;
@@ -79,9 +105,10 @@ header {
 
                 span {
                     position: absolute;
-                    font-size: 19.5px;
+                    top: 0;
+                    right: 0;
+                    font-size: 20px;
                     color: $brand_third_color;
-                    border-bottom: 2px solid $brand_primary_color;
                 }
             }
 
@@ -92,8 +119,7 @@ header {
 
     .bottom_header {
         height: 400px;
-        // background-image: url("../img/jumbotron.jpg");
-        background-image: url("https://www.dccomics.com/sites/default/files/TTG_RollWithIt_marquee_5f8f7ac5d8cb66.61529690.JPG");
+        background-image: url("../img/jumbotron.jpg");
     }
 
 }

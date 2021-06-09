@@ -1,3 +1,97 @@
 footer {
-    background-color: $brand_third_color;
+    
+    .top_footer {
+        padding: 40px 0;
+        background-image: url("../img/footer-bg.jpg");
+        background-size: cover;
+        overflow: hidden;
+
+        .content {
+            display: flex;
+            justify-content: center;
+        }
+
+        .left_footer {
+            width: 50%;
+            display: flex;
+
+            .links_list {
+                margin: 0 30px 15px 0;
+
+                li {
+                    font-size: 13px;
+                    margin: 3px 0;
+                }
+
+                a {
+                    color: gray;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        .rights {
+            color: gray;
+            font-size: 13px;
+
+            a {
+                color: $brand_primary_color;
+            }
+        }
+
+        .right_footer {
+            width: 50%;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: -120px;
+                right: 0;
+            }
+        }
+    }
+
+    .bottom_footer {
+        padding: 30px 0;
+        background-color: $brand_third_color;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sign {
+
+            padding: 12px 15px;
+            border: 2px solid $brand_primary_color;
+
+            a {
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+
+        .social {
+            
+            h2 {
+                text-transform: uppercase;
+                color: $brand_primary_color;
+            }
+
+            .social_links {
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
 }

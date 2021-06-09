@@ -5,8 +5,8 @@
         <div class="top_menu">
             <div class="container">
                 <ul>
-                    <li><a href="#">DC Power Visa</a></li>
-                    <li><a href="#">Additional DC Sites</a></li>
+                    <li><a href="#">DC Power<span class="sm">sm</span> Visa<span class="r">&#174;</span></a></li>
+                    <li><a href="#">Additional DC Sites <i class="fas fa-sort-down"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -30,7 +30,7 @@
                             <li><a href="#">Videos</a></li>
                             <li><a href="#">Fans</a></li>
                             <li><a href="#">News</a></li>
-                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Shop <i class="fas fa-sort-down"></i></a></li>
                         </ul>
                     </nav>
                 </div>
