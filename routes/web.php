@@ -26,9 +26,10 @@ Route::get("/comic/{id}", function ($id) {
     
     $comic = [];
 
-    foreach ($comics_array as $single_comic) {
-        if ($single_comic["id"] == $id) {
-            $comic = $single_comic;
+    foreach ($comics_array as $current_comic) {
+        
+        if ($current_comic["id"] == $id) {
+            $comic = $current_comic;
         }
     }
 

@@ -5,8 +5,12 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   color: white;
+}
+
+img {
+  display: block;
 }
 
 h1 {
@@ -140,7 +144,7 @@ header .bottom_header {
   background-image: url("../img/jumbotron.jpg");
 }
 
-main .title {
+.title {
   display: inline-block;
   background-color: #0182f9;
   padding: 10px 20px;
@@ -148,9 +152,10 @@ main .title {
   top: -50px;
   left: 0;
 }
-main .title h1 {
-  font-size: 20px;
+.title h1 {
+  font-size: 30px;
 }
+
 main #comics {
   background-color: #222;
   padding: 20px 0;
@@ -167,15 +172,15 @@ main #comics .comics_list .single_comic {
 main #comics .comics_list .single_comic a {
   color: white;
 }
-main #comics .comics_list .single_comic span {
-  text-transform: uppercase;
-  font-size: 14px;
-}
 main #comics .comics_list .single_comic .comic_img {
   width: 180px;
   height: 180px;
   margin-bottom: 20px;
   overflow: hidden;
+}
+main #comics .comics_list .single_comic .comic_title h2 {
+  font-size: 15px;
+  text-transform: uppercase;
 }
 main #comics .load_more {
   text-align: center;
@@ -190,95 +195,212 @@ main #comics .load_more button {
   border: 0;
   cursor: pointer;
 }
-main #links {
+main #links_hompage {
   background-color: #0182f9;
   padding: 50px 0;
 }
-main #links .links_container {
+main #links_hompage .links_container {
   display: flex;
   justify-content: space-around;
 }
-main #links .links_container img {
+main #links_hompage .links_container img {
   height: 50px;
   max-width: 50px;
   vertical-align: middle;
   margin: 0 10px;
 }
-main #links .links_container span {
+main #links_hompage .links_container span {
   text-transform: uppercase;
+}
+main #links_hompage .single_link {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 main #characters {
   padding: 20px 0;
   background-color: #222;
 }
-main #comic_info .banner {
+main #comic .banner {
   height: 80px;
   background-color: #0182f9;
 }
-main #comic_info .comic_poster {
+main #comic .comic_poster {
   position: relative;
   top: -230px;
   left: 0;
 }
-main #comic_info .comic_details {
+main #comic .comic_info {
   padding: 50px 0;
 }
-main #comic_info .comic_details .small_container {
+main #comic .comic_info .small_container {
   display: flex;
 }
-main #comic_info .comic_details .small_container .col_sx {
+main #comic .comic_info .small_container .col_sx {
   width: 70%;
   padding-right: 25px;
 }
-main #comic_info .comic_details .small_container .col_dx {
+main #comic .comic_info .small_container .col_dx {
   width: 30%;
   padding-left: 25px;
   text-align: right;
 }
-main #comic_info .comic_details .comic_description {
+main #comic .comic_info .comic_description {
   color: gray;
+  font-size: 16px;
+  font-weight: bold;
   margin: 10px 0;
   line-height: 25px;
 }
-main #comic_info .comic_details .comic_title {
-  color: #333;
+main #comic .comic_info .comic_title {
+  color: #244d66;
   margin: 20px 0;
 }
-main #comic_info .comic_details .comic_title h1 {
+main #comic .comic_info .comic_title h1 {
   font-size: 30px;
   text-transform: uppercase;
 }
-main #comic_info .comic_details .comic_shop {
+main #comic .comic_info .comic_shop {
   font-weight: bold;
   background-color: #55ba59;
   border-bottom: 1px solid #333;
   display: flex;
   justify-content: space-between;
 }
-main #comic_info .comic_details .comic_shop .comic_price {
+main #comic .comic_info .comic_shop .comic_price {
   padding: 13px 23px;
   flex-grow: 1;
 }
-main #comic_info .comic_details .comic_shop .comic_price .us_price {
+main #comic .comic_info .comic_shop .comic_price .us_price {
   color: #aef894;
 }
-main #comic_info .comic_details .comic_shop .disponibility {
+main #comic .comic_info .comic_shop .disponibility {
   padding: 13px 23px;
   color: #aef894;
 }
-main #comic_info .comic_details .comic_shop .check_availability {
+main #comic .comic_info .comic_shop .check_availability {
   padding: 13px 23px;
   border-left: 1px solid #333;
 }
-main #comic_info .comic_details .comic_shop .check_availability i {
+main #comic .comic_info .comic_shop .check_availability i {
   vertical-align: top;
 }
-main #comic_info .adv {
+main #comic .adv {
   color: #333;
   font-weight: bold;
 }
-main #comic_info .adv_img img {
+main #comic .adv_img img {
   width: 100%;
+}
+main #comic .comic_specs {
+  background-color: #f6f6f6;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 100px;
+  color: gray;
+}
+main #comic .comic_specs .small_container {
+  display: flex;
+}
+main #comic .comic_specs .small_container .col_sx {
+  width: 50%;
+  padding-right: 25px;
+}
+main #comic .comic_specs .small_container .col_dx {
+  width: 50%;
+  padding-left: 25px;
+}
+main #comic .comic_specs .talent, main #comic .comic_specs .specs {
+  border-bottom: 1px solid lightgray;
+  padding: 20px 0;
+  color: #244d66;
+}
+main #comic .comic_specs .artists,
+main #comic .comic_specs .writers,
+main #comic .comic_specs .series,
+main #comic .comic_specs .price,
+main #comic .comic_specs .sale_date {
+  border-bottom: 1px solid lightgray;
+  padding: 10px 0;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+}
+main #comic .comic_specs .artists .artists_title,
+main #comic .comic_specs .artists .writers_title,
+main #comic .comic_specs .artists .series_title,
+main #comic .comic_specs .artists .price_title,
+main #comic .comic_specs .artists .sale_date_title,
+main #comic .comic_specs .writers .artists_title,
+main #comic .comic_specs .writers .writers_title,
+main #comic .comic_specs .writers .series_title,
+main #comic .comic_specs .writers .price_title,
+main #comic .comic_specs .writers .sale_date_title,
+main #comic .comic_specs .series .artists_title,
+main #comic .comic_specs .series .writers_title,
+main #comic .comic_specs .series .series_title,
+main #comic .comic_specs .series .price_title,
+main #comic .comic_specs .series .sale_date_title,
+main #comic .comic_specs .price .artists_title,
+main #comic .comic_specs .price .writers_title,
+main #comic .comic_specs .price .series_title,
+main #comic .comic_specs .price .price_title,
+main #comic .comic_specs .price .sale_date_title,
+main #comic .comic_specs .sale_date .artists_title,
+main #comic .comic_specs .sale_date .writers_title,
+main #comic .comic_specs .sale_date .series_title,
+main #comic .comic_specs .sale_date .price_title,
+main #comic .comic_specs .sale_date .sale_date_title {
+  width: 30%;
+  color: #244d66;
+}
+main #comic .comic_specs .artists .artists_list,
+main #comic .comic_specs .artists .writers_list,
+main #comic .comic_specs .artists .series_link,
+main #comic .comic_specs .writers .artists_list,
+main #comic .comic_specs .writers .writers_list,
+main #comic .comic_specs .writers .series_link,
+main #comic .comic_specs .series .artists_list,
+main #comic .comic_specs .series .writers_list,
+main #comic .comic_specs .series .series_link,
+main #comic .comic_specs .price .artists_list,
+main #comic .comic_specs .price .writers_list,
+main #comic .comic_specs .price .series_link,
+main #comic .comic_specs .sale_date .artists_list,
+main #comic .comic_specs .sale_date .writers_list,
+main #comic .comic_specs .sale_date .series_link {
+  width: 70%;
+}
+main #comic .comic_specs .artists .artists_list a,
+main #comic .comic_specs .artists .writers_list a,
+main #comic .comic_specs .artists .series_link a,
+main #comic .comic_specs .writers .artists_list a,
+main #comic .comic_specs .writers .writers_list a,
+main #comic .comic_specs .writers .series_link a,
+main #comic .comic_specs .series .artists_list a,
+main #comic .comic_specs .series .writers_list a,
+main #comic .comic_specs .series .series_link a,
+main #comic .comic_specs .price .artists_list a,
+main #comic .comic_specs .price .writers_list a,
+main #comic .comic_specs .price .series_link a,
+main #comic .comic_specs .sale_date .artists_list a,
+main #comic .comic_specs .sale_date .writers_list a,
+main #comic .comic_specs .sale_date .series_link a {
+  color: #0182f9;
+}
+main #comic .comic_specs .artists .series_link,
+main #comic .comic_specs .writers .series_link,
+main #comic .comic_specs .series .series_link,
+main #comic .comic_specs .price .series_link,
+main #comic .comic_specs .sale_date .series_link {
+  text-transform: uppercase;
+}
+main #comic .comic_specs li {
+  display: inline-block;
+}
+main #link_comic {
+  background-color: #f6f6f6;
 }
 
 footer .top_footer {
@@ -286,6 +408,7 @@ footer .top_footer {
   background-image: url("../img/footer-bg.jpg");
   background-size: cover;
   overflow: hidden;
+  font-weight: bold;
 }
 footer .top_footer .content {
   display: flex;

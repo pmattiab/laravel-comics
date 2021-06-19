@@ -22,17 +22,14 @@
 
                         <li class="single_comic">
 
-                            <a href="{{route("comic", [
-                                "id" => $comic["id"]
-                            ]
-                            )}}">
+                            <a href="{{route("comic", ["id" => $comic["id"]])}}">
 
                                 <div class="comic_img">
                                     <img src="{{$comic["thumb"]}}" alt="{{$comic["title"]}}">
                                 </div>
     
                                 <div class="comic_title">
-                                    <span>{{$comic["series"]}}</span>
+                                    <h2>{{$comic["series"]}}</h2>
                                 </div>
 
                             </a>
@@ -53,35 +50,45 @@
 
     </section>
 
-    <section id="links">
+    <section id="links_hompage">
 
         <div class="container">
 
             <div class="links_container">
                 
                 <div>
-                    <img src="{{asset("img/buy-comics-digital-comics.png")}}" alt="">
-                    <span>Digital Comics</span>
+                    <a href="#" class="single_link">
+                        <img src="{{asset("img/buy-comics-digital-comics.png")}}" alt="">
+                        <span>Digital Comics</span>
+                    </a>
                 </div>
 
                 <div>
-                    <img src="{{asset("img/buy-comics-merchandise.png")}}" alt="">
-                    <span>DC Merchandise</span>
+                    <a href="#" class="single_link">
+                        <img src="{{asset("img/buy-comics-merchandise.png")}}" alt="">
+                        <span>DC Merchandise</span>
+                    </a>
                 </div>
 
                 <div>
-                    <img src="{{asset("img/buy-comics-subscriptions.png")}}" alt="">
-                    <span>Subscription</span>
+                    <a href="#" class="single_link">
+                        <img src="{{asset("img/buy-comics-subscriptions.png")}}" alt="">
+                        <span>Subscription</span>
+                    </a>
                 </div>
 
                 <div>
-                    <img src="{{asset("img/buy-comics-shop-locator.png")}}" alt="">
-                    <span>Comic Shop Location</span>
+                    <a href="#" class="single_link">
+                        <img src="{{asset("img/buy-comics-shop-locator.png")}}" alt="">
+                        <span>Comic Shop Location</span>
+                    </a>
                 </div>
 
                 <div>
-                    <img src="{{asset("img/buy-dc-power-visa.svg")}}" alt="">
-                    <span>DC Power Visa</span>
+                    <a href="#" class="single_link">
+                        <img src="{{asset("img/buy-dc-power-visa.svg")}}" alt="">
+                        <span>DC Power Visa</span>
+                    </a>
                 </div>
 
             </div>
